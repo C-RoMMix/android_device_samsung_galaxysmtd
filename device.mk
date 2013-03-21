@@ -38,6 +38,14 @@
 DEVICE_PACKAGE_OVERLAYS += \
 	device/samsung/galaxysmtd/overlay
 
+# This device is hdpi.
+PRODUCT_AAPT_CONFIG := normal hdpi
+PRODUCT_AAPT_PREF_CONFIG := hdpi
+PRODUCT_LOCALES += hdpi
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=240
+
 PRODUCT_COPY_FILES := \
 	device/samsung/galaxysmtd/asound.conf:system/etc/asound.conf
 
